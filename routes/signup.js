@@ -17,6 +17,7 @@ router.post("/", (req, res) => {
 
     client.query(signupQuery, (err, result, fields) => {
         if (err) {
+            console.log(err);
             //Duplicate Entry
             res.status(400).send()
         }
