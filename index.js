@@ -11,9 +11,11 @@ app.use(express.json())
 
 //Providing Routes
 const SignUp = require('./routes/signup');
+const Login = require("./routes/login")
 
 //Assigning Variables
 app.use('/signup', SignUp)
+app.use('/login', Login)
 
 
 app.listen(port, () => {

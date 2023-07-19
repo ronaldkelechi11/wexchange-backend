@@ -16,7 +16,7 @@ router.post("/", (req, res) => {
         ('${name}', '${profilePic}', '','${password}', '${telephone}', '${address}', '${about}' );`
 
     client.query(signupQuery, (err, result, fields) => {
-        if (err.code == "23505") {
+        if (err) {
             //Duplicate Entry
             res.status(400).send()
         }
