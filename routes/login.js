@@ -19,7 +19,7 @@ router.post("/", (req, res) => {
             }
             else {
                 // User exist
-                res.status(200).send(result.rows)
+                res.status(200).send(result.rows[0])
             }
         }
     })
