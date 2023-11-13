@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors');
 
 const app = express()
-const mongoDBurl = ""
+const mongoDBurl = "mongodb://127.0.0.1:27017/selln"
 const port = 3000 || process.env.PORT
 
 //Middleware
